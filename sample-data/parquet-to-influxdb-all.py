@@ -69,5 +69,5 @@ def dataframe_to_influxdb(host='None', port=8086, dbname=None, measurement=None,
 if __name__ == '__main__':
     df = read_parquet_file(sys.argv[1])
     #print(df)
-    dataframe_to_influxdb(host-sys.argv[2], dbname=sys.argv[3], measurement=sys.argv[4], df=df)
+    dataframe_to_influxdb(host=sys.argv[2], dbname=sys.argv[3], measurement=sys.argv[4], df=df)
 
